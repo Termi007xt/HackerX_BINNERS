@@ -46,7 +46,7 @@ def query_llm(json_chunks, queries):
 
     # Postprocessing
     answers = answers.split('|')
-    answers = [answer.strip() for answer in answers if answer]
+    answers = [answer.strip() for answer in answers if answer.strip()]
 
     ans = {"answers": answers}
 
