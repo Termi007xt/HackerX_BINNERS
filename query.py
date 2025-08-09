@@ -47,6 +47,8 @@ def query_llm(json_chunks, queries):
     # Postprocessing
     answers = answers.split('|')
     answers = [answer.strip() for answer in answers if answer.strip()]
+    # with open('answers.txt', 'a', encoding='utf-8') as file:
+    #     file.write('New ans start here' + str(answers) + '\n')
 
     ans = {"answers": answers}
 
